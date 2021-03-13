@@ -1,0 +1,57 @@
+.selectScreenWrapper {
+  width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+.selectScreenWrapper .title {
+  font-size: 16px;
+  color: #424755;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.selectScreenWrapper .options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+.selectScreenWrapper .options .logo {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+}
+.selectScreenWrapper .options .logo .inputBox {
+  margin: 0;
+  cursor: pointer;
+}
+.selectScreenWrapper .continueBtn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #c7c7c7;
+  color: #6e757d;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: all 0.2s ease-out;
+  -webkit-box-shadow: 0 15px 6px -6px #c7c7c726, inset 0 0 5px #c7c7c726;
+  -moz-box-shadow: 0 15px 6px -6px #c7c7c726, inset 0 0 5px #c7c7c726;
+  box-shadow: 0 15px 6px -6px #c7c7c726, inset 0 0 5px #c7c7c726;
+}
+.selectScreenWrapper .continueBtn:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  -webkit-box-shadow: 0 15px 6px -6px var(--tertiary-color);
+  -moz-box-shadow: 0 15px 6px -6px var(--tertiary-color);
+  box-shadow: 0 15px 6px -6px var(--tertiary-color);
+}

@@ -1,0 +1,49 @@
+.homeScreenWrapper {
+  width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+.homeScreenWrapper .homeScreenLogo {
+  width: 100%;
+}
+.homeScreenWrapper .title {
+  font-size: 16px;
+  color: #424755;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.homeScreenWrapper .options {
+  display: flex;
+  flex-direction: column;
+}
+.homeScreenWrapper .options .option {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #c7c7c7;
+  color: #6e757d;
+  margin-bottom: 15px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: all 0.2s ease-out;
+  -webkit-box-shadow: 0 15px 6px -6px #c7c7c726, inset 0 0 5px #c7c7c726;
+  -moz-box-shadow: 0 15px 6px -6px #c7c7c726, inset 0 0 5px #c7c7c726;
+  box-shadow: 0 15px 6px -6px #c7c7c726, inset 0 0 5px #c7c7c726;
+}
+.homeScreenWrapper .options .option:last-child {
+  margin-bottom: 0;
+}
+.homeScreenWrapper .options .option:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  -webkit-box-shadow: 0 15px 6px -6px var(--tertiary-color);
+  -moz-box-shadow: 0 15px 6px -6px var(--tertiary-color);
+  box-shadow: 0 15px 6px -6px var(--tertiary-color);
+}
