@@ -2,40 +2,46 @@ import React, { Component } from "react";
 import "./SelectScreen.css";
 
 class SelectScreen extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      userIsX: true,
-    };
-  }
   render() {
-    const { userIsX } = this.state;
+    const { userIsX, setUserIsX, setShowGame, resetBoardStatus } = this.props;
     return (
       <div className="selectScreenWrapper">
         <div className="title">Pick Your Side</div>
         <div className="options">
-          <div className="logo logoX">
-            <div className="image">
-              <img src="https://img.icons8.com/emoji/48/000000/cross-mark-emoji.png" />
-            </div>
+          <div
+            className={`logo logoX ${userIsX ? "" : "disabled"}`}
+            onClick={(e) => setUserIsX(true)}
+          >
+            <i className="fas fa-times" aria-hidden="true" />
             <input
               type="radio"
               className="inputBox"
               checked={userIsX}
-              onChange={(e) => this.setState({ userIsX: true })}
+              onChange={(e) => setUserIsX(true)}
             />
           </div>
-          <div className="logo logoO">
-            <div className="image"></div>
+          <div
+            className={`logo logoO ${!userIsX ? "" : "disabled"}`}
+            onClick={(e) => setUserIsX(false)}
+          >
+            <i className="far fa-circle" aria-hidden="true" />
             <input
               type="radio"
               className="inputBox"
               checked={!userIsX}
-              onChange={(e) => this.setState({ userIsX: false })}
+              onChange={(e) => setUserIsX(false)}
             />
           </div>
         </div>
-        <button className="continueBtn">Continue</button>
+        <button
+          className="continueBtn"
+          onClick={() => {
+            setShowGame(true);
+            resetBoardStatus();
+          }}
+        >
+          Continue
+        </button>
       </div>
     );
   }

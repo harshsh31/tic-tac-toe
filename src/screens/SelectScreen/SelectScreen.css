@@ -29,9 +29,39 @@
   align-items: center;
   flex-flow: column;
   justify-content: center;
+  margin-bottom: 40px;
+  padding: 10px;
+  transition: all 0.4s ease-out;
+}
+.selectScreenWrapper .options .disabled {
+  opacity: 0.5;
+  box-shadow: none;
+}
+.logoX {
+  color: #f46960;
+  font-size: 263px;
+  box-shadow: 0 0 10px 10px #f4696026;
+}
+.logoO {
+  color: #4a90e2;
+  font-size: 200px;
+  box-shadow: 0 0 10px 10px #4a90e226;
+}
+.selectScreenWrapper .options .logoX:hover {
+  box-shadow: 0 0 10px 10px #f4696026;
+  z-index: 9;
+}
+.selectScreenWrapper .options .logoO:hover {
+  box-shadow: 0 0 10px 10px #4a90e226;
+  z-index: 9;
+}
+.logo i {
+  height: 200px;
+  display: flex;
+  align-items: center;
 }
 .selectScreenWrapper .options .logo .inputBox {
-  margin: 0;
+  margin-top: 20px;
   cursor: pointer;
 }
 .selectScreenWrapper .continueBtn {

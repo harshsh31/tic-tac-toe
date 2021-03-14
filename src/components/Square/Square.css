@@ -1,0 +1,18 @@
+.square {
+  flex-grow: 1;
+  width: 33%;
+  padding: 0 20px;
+  height: 60px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.square .xIcon {
+  font-size: 30px;
+  color: #f46960;
+}
+.square .oIcon {
+  font-size: 24px;
+  color: #4a90e2;
+}
