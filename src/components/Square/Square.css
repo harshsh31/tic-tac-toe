@@ -2,17 +2,56 @@
   flex-grow: 1;
   width: 33%;
   padding: 0 20px;
-  height: 60px;
+  height: 100px;
   border: none;
   outline: none;
   background-color: #ffffff;
   cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 .square .xIcon {
-  font-size: 30px;
-  color: #f46960;
+  font-size: 38px;
+  color: #4a90e2;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  -webkit-box-shadow: 0 30px 20px -20px #4a90e226,
+    inset 0 -10px 10px -10px #4a90e226;
+  -moz-box-shadow: 0 30px 20px -20px #4a90e226,
+    inset 0 -10px 10px -10px #4a90e226;
+  box-shadow: 0 30px 20px -20px #4a90e226, inset 0 -10px 10px -10px #4a90e226;
 }
 .square .oIcon {
   font-size: 24px;
   color: #4a90e2;
+}
+.square .cross {
+  width: 32px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: #4a90e2;
+  text-shadow: 0px 3px #4a90e226, 0px 1px #4a90e226, 0px 2px #4a90e226,
+    0px 4px #4a90e226, 0px 5px #4a90e226, 0px 6px #4a90e226, 0px 7px #4a90e226;
+  transition: all 0.5s ease-out;
+}
+/* .square .cross .crossIcon {
+  font-size: 30px;
+  color: #4a90e2;
+  text-shadow: 2px 3px #4a90e226, -1px -1px #4a90e226, -1px -2px #4a90e226;
+} */
+.square .circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 12px solid #e74c3c;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: transparent;
+  -webkit-box-shadow: 0 15px 6px -6px #e74c3c26, inset 0 15px 6px -6px #e74c3c26;
+  -moz-box-shadow: 0 15px 6px -6px #e74c3c26, inset 0 15px 6px -6px #e74c3c26;
+  box-shadow: 0 15px 6px -6px #e74c3c26, inset 0 15px 6px -6px #e74c3c26;
+  transition: all 0.5s ease-out;
 }

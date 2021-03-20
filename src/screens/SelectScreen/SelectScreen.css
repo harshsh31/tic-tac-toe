@@ -38,21 +38,20 @@
   box-shadow: none;
 }
 .logoX {
-  color: #f46960;
-  font-size: 263px;
-  box-shadow: 0 0 10px 10px #f4696026;
-}
-.logoO {
   color: #4a90e2;
-  font-size: 200px;
   box-shadow: 0 0 10px 10px #4a90e226;
 }
+.logoO {
+  color: #e74c3c;
+  font-size: 200px;
+  box-shadow: 0 0 10px 10px #e74c3c26;
+}
 .selectScreenWrapper .options .logoX:hover {
-  box-shadow: 0 0 10px 10px #f4696026;
+  box-shadow: 0 0 10px 10px #4a90e226;
   z-index: 9;
 }
 .selectScreenWrapper .options .logoO:hover {
-  box-shadow: 0 0 10px 10px #4a90e226;
+  box-shadow: 0 0 10px 10px #e74c3c26;
   z-index: 9;
 }
 .logo i {
@@ -63,6 +62,26 @@
 .selectScreenWrapper .options .logo .inputBox {
   margin-top: 20px;
   cursor: pointer;
+}
+.logo .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 40px solid #e74c3c;
+  box-sizing: border-box;
+  box-shadow: 6px 10px 0 0 #e74c3c26, inset 6px 10px 0 0 #e74c3c26;
+}
+.logo .cross {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo .cross .crossIcon {
+  font-size: 24vw;
+  line-height: 174px;
+  text-shadow: 8px 7px #4a90e226;
 }
 .selectScreenWrapper .continueBtn {
   padding: 10px 20px;

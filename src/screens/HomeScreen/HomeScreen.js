@@ -92,14 +92,13 @@ class HomeScreen extends Component {
       setShowGame,
       resetBoardStatus,
       board,
-      stepNumber,
       wonGames,
       gamesPlayed,
     } = this.props;
     return userMode == null ? (
       <div className="homeScreenWrapper">
         <div className="homeScreenLogo">
-          <img src="tictactoe.svg" />
+          <img src="tictactoe.svg" alt="logo" />
         </div>
         <div className="title">Choose your play mode</div>
         <div className="options">

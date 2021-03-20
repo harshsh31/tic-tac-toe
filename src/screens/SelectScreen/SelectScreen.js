@@ -12,7 +12,10 @@ class SelectScreen extends Component {
             className={`logo logoX ${userIsX ? "" : "disabled"}`}
             onClick={(e) => setUserIsX(true)}
           >
-            <i className="fas fa-times" aria-hidden="true" />
+            {/* <i className="fas fa-times" aria-hidden="true" /> */}
+            <div className="cross">
+              <div className="crossIcon">X</div>
+            </div>
             <input
               type="radio"
               className="inputBox"
@@ -24,7 +27,7 @@ class SelectScreen extends Component {
             className={`logo logoO ${!userIsX ? "" : "disabled"}`}
             onClick={(e) => setUserIsX(false)}
           >
-            <i className="far fa-circle" aria-hidden="true" />
+            <div className="circle"></div>
             <input
               type="radio"
               className="inputBox"
